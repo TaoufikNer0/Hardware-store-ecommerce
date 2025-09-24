@@ -1,0 +1,71 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #1F2A44;
+    background-color: #F9FAFB;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0; /* Prevent extra gaps */
+}
+
+main {
+    flex-grow: 1; /* Ensures content pushes footer down */
+}
+
+.navbar {
+    background-color: #FFFFFF;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+}
+
+.nav-link {
+    color: #000000 !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #3B82F6 !important;
+}
+
+.cart-section, .products-section, .confirmation-section, .register-section, .login-section, .dashboard-section {
+    padding: 3rem 0;
+    background-color: #FFFFFF;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #3B82F6;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #2563EB;
+}
+
+.modern-footer {
+    background: linear-gradient(135deg, #1F2A44 0%, #374151 100%);
+    color: #FFFFFF;
+    padding: 2rem 0;
+    width: 100%;
+    flex-shrink: 0; /* Prevent footer from shrinking */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cart-section h2, .products-section h2, .confirmation-section h2, .register-section h2, .login-section h2, .dashboard-section h2 {
+        font-size: 2.5rem;
+    }
+}
